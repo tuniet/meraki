@@ -1,35 +1,226 @@
-.landing{
-    
+#landing{
     .heroimage{
         width: 100%;
         height: 100vh;
-        background-image: url('../media/herobg-hd.jpg');
-        z-index: -1;
         position: relative;
-        .img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: fixed;
-            top: 0;
-            left: 0;
+    }
+    .heroimage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .herotext{
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #ECE4D9;
+        text-decoration: none;
+        flex-direction: column;
+        .upto{
+            font-size: 40px;
+        }
+        .perc{
+            font-size: 80px;
+        }
+        .call{
+            font-size: 50px;
         }
     }
-    .herobutton{
-        width: 150px;
-        height: 50px;
-        border: 3px #ECE4D9 solid;
-        margin: auto;
-        margin-top: 80vh;
-        transition: transform 3s;
-        text-decoration: none;
-        color: #ECE4D9;
-        font-size: 20px;
+    
+    
+    .collections{
+        height: 70vh;
+        width: 100%;
+        gap: 30px;
+        .collection-card{
+            width: 100%;
+            position: relative;
+            color: #ECE4D9;
+            .collection-title{
+                position: absolute;
+                bottom: 90px;
+                left: 50%;
+                font-size: 35px;
+                font-weight: bold;
+                transform: translate(-50%, -50%);
+            }
+            .collection-button{
+                position: absolute;
+                bottom: 46px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                letter-spacing: 3px;
+                background-color: #ECE4D9;
+                color: #452B1A;;
+            }
+        }
     }
-    .herobutton:hover{
-        transform: scale(1.4);
+    .collection-card:hover{
+        .collection-button{
+            background-color: transparent;
+            color: #ECE4D9;
+        }
     }
-    .bestsellers{
+    .collection-card.tees{
+        background-image: url('../media/images/SectionTees.jpg');
+        background-position: 50%;
+    }
+    .collection-card.hoods{
+        background-image: url('../media/images/SectionHoodies.jpg');
+        background-position: 50%;
+    }
+    .collection-card.pants{
+        background-image: url('../media/images/SectionPants.jpg');
+        background-position: 50%;
+    }
+    .hrimg-aboutus{
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        .abouttext{
+            position: absolute;
+            left: 50px;
+            top: 20%;
+            width: 30%;
+            text-align: start;
+            color: #ECE4D9;
+            font-size: 32px;
+        }
+        .aboutcall{
+            position: absolute;
+            bottom: 30%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            letter-spacing: 3px;
+            background-color: #ECE4D9;
+            color: #452B1A;;
+        }
+    }
+    .hrimg-aboutus img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .lastcta{
+        height: 400px;
+        width: 100%;
+        gap: 10px;
+        .lastcta-card{
+            width: 100%;
+            position: relative;
+            color: #ECE4D9;
+            .lastcta-button{
+                position: absolute;
+                bottom: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                letter-spacing: 3px;
+                border: 1px #452B1A solid;
+                color: #452B1A;
+                opacity: 0;
+            }
+            .lastcta-fg{
+                width: 100%;
+                height: 100%;
+                background-color: #ECE4D9;
+                opacity: 0%;
+            }
+        }
+        
+        .lastcta-card:hover{
+            .lastcta-fg{
+                opacity: 60%;
+            }
+            .lastcta-button{
+                opacity: 1;
+            }
+        }
+    }
+    .lastcta-card.one{
+        background-image: url('../media/images/lastcta1.webp');
+        background-position: 50%;
+    }
+    .lastcta-card.two{
+        background-image: url('../media/images/lastcta2.webp');
+        background-position: 50%;
+    }
+    .lastcta-card.three{
+        background-image: url('../media/images/lastcta3.webp');
+        background-position: 50%;
+    }
+    .lastcta-card.four{
+        background-image: url('../media/images/lastcta4.webp');
+        background-position: 50%;
+    }
+    .lastcta-card.five{
+        background-image: url('../media/images/lastcta5.jpg');
+        background-position: 50%;
+    }
+    .footer{
+        border-top:#452B1A solid;
+        background-color: #ECE4D9;
+        color: #452B1A;
+        height: 30vh;
+        align-items: center;
+        justify-content: space-between;
+        .left{
+            text-align: start;
+            .branding{
+                .title{
+                    font-family: SigismundoDiFanti;
+                    color: #452B1A;
+                }
+                .eslogan{
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+            }
+            .socials{
+                gap: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+        .right{
+            text-align: end;
+            .form{
+                width: 100%;
+                text-align: center;
+                .form-title{
+                    font-size: 32px;
+                }
+                .form-input{
+                    width: 78%;
+                    text-decoration: none;
+                    outline: none;
+                }
+                .form-input:focus{
+                    outline: none;
+                }
+                .form-submit{
+                    width: 20%;
+                    color: #ECE4D9;
+                    background-color: #452B1A;
+                    border-radius: 1px;
+                    border: none;
+                }
+            }
+            .footer-info{
+                gap: 20px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+        textarea:focus, input:focus{
+            outline: none;
+        }
+    }
+    
 
-    }
 }

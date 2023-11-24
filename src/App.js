@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="Aboutus" element={<Aboutus />} />
-        <Route path="Allproducts" element={<Allproducts />} />
+        <Route path="Allproducts/:filter" element={<Allproducts />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </div>
