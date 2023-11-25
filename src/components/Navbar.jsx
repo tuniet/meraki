@@ -33,7 +33,7 @@ function Navbar() {
 
 
   return (
-    <div>
+    <div className='navexp'>
       <div className={`d-flex align-items-center nav px-4 ${visibleNav} ${onTop}`}>
               <div className={`d-flex justify-content-start nav-side ${visibleNav}`}>
               <Link className='item' to='Allproducts/all'>All products</Link>
@@ -47,7 +47,9 @@ function Navbar() {
               <span className='item'>Cart</span>
           </div>
       </div>
-      
+      <div className='extension'>
+
+      </div>
     </div>
   );
 }
