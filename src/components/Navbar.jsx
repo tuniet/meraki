@@ -6,6 +6,7 @@ function Navbar() {
 
   const [visibleNav, setvisibleNav] = useState('show');
   const [onTop, setonTop] = useState('top')
+  const [showmenu, setshowmenu] = useState('')
   
   let prevScrollPos = window.scrollY;
 
@@ -33,22 +34,25 @@ function Navbar() {
 
 
   return (
-    <div className='navexp'>
+    <div className='navexp' >
       <div className={`d-flex align-items-center nav px-4 ${visibleNav} ${onTop}`}>
-              <div className={`d-flex justify-content-start nav-side ${visibleNav}`}>
-              <Link className='item' to='Allproducts/all'>All products</Link>
-              <Link className='item' to='Allproducts/newcollection'>New arrivals</Link>
-              <Link className='item' to='Allproducts/sale'>On Sale</Link>
+              <div className='d-flex justify-content-start nav-side'>
+              <Link className='item' to='Allproducts/all' onMouseEnter={() => setshowmenu('menu-active')}>SHOP</Link>
+              <Link className='item' to='Allproducts/newcollection'>NEW ARRIVALS</Link>
+              <Link className='item' to='Allproducts/sale'>ON SALE</Link>
           </div>
-          <h1 className='d-flex justify-content-center m-0 title'>MERAKI</h1>
+          <Link to='/' className='title'><h1 className='d-flex justify-content-center m-0'>MERAKI</h1></Link>
           <div className='d-flex justify-content-end nav-side'>
-              <span className='item'>Lenguage</span>
-              <Link className='item' to='Aboutus'>About us</Link>
-              <span className='item'>Cart</span>
+              <span className='item'>ENG</span>
+              <Link className='item' to='Aboutus'>ABOUT US</Link>
+              <span className='item'>CART</span>
           </div>
       </div>
-      <div className='extension'>
-
+      <div className={`extension d-flex px-4 ${showmenu}`} onMouseLeave={() =>setshowmenu('')}>
+          <Link className='menu-card tees' to='Allproducts/tees'><div className='menu-fg'></div><span className='card-title'>TEES</span></Link>
+          <Link className='menu-card hoods' to='Allproducts/hoodies'><div className='menu-fg'></div><span className='card-title'>HOODIES</span></Link>
+          <Link className='menu-card pants' to='Allproducts/pants'><div className='menu-fg'></div><span className='card-title'>PANTS</span></Link>
+          <Link className='menu-card accessories' to='Allproducts/all'><div className='menu-fg'></div><span className='card-title'>ACCESSORIES</span></Link>
       </div>
     </div>
   );

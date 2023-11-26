@@ -97,12 +97,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: FGBrwnPantsFront,
                 imgurlback: FGBrwnPantsBack,
             },
             {
-                name: 'green',
+                code: '#234e44',
                 imgurlfront: FGGrnPantsFront,
                 imgurlback: FGGrnPantsBack,
             }
@@ -119,7 +119,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'green',
+                code: '#234e44',
                 imgurlfront: OGrnPantsFront,
                 imgurlback: OGrnPantsBack,
             },
@@ -135,22 +135,22 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: NPCargoBlackFront,
                 imgurlback: NPCargoBlackBack,
             },
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: NPCargoBrownFront,
                 imgurlback: NPCargoBrownBack,
             },
             {
-                name: 'blue',
+                code: '#bfced9',
                 imgurlfront: NPCargoBlueFront,
                 imgurlback: NPCargoBlueBack,
             },
             {
-                name: 'cream',
+                code: '#e2dfd1',
                 imgurlfront: NPCargoCremaFront,
                 imgurlback: NPCargoCremaBack,
             }
@@ -166,22 +166,22 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'dark blue',
+                code: '#1B2A43',
                 imgurlfront: NPVaqOscFront,
                 imgurlback: NPVaqOscBack,
             },
             {
-                name: 'light blue',
+                code: '#bfced9',
                 imgurlfront: NPVaqClaroFront,
                 imgurlback: NPVaqClaroBack,
             },
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: NPVaqBrownFront,
                 imgurlback: NPVaqBrownBack,
             },
             {
-                name: 'cream',
+                code: '#e2dfd1',
                 imgurlfront: NPVaqCremaFront,
                 imgurlback: NPVaqCremaBack,
             }
@@ -197,12 +197,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'blue',
+                code: '#bfced9',
                 imgurlfront: NPPolarBlueFront,
                 imgurlback: NPPolarBlueBack,
             },
             {
-                name: 'green',
+                code: '#234e44',
                 imgurlfront: NPPolarGreenFront,
                 imgurlback: NPPolarGreenBack,
             }
@@ -220,22 +220,22 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'white',
+                code: '#fff',
                 imgurlfront: FGLoveBlancoFront,
                 imgurlback: FGLoveBlancoBack,
             },
             {
-                name: 'cream',
+                code: '#e2dfd1',
                 imgurlfront: FGLoveCremaFront,
                 imgurlback: FGLoveCremaBack,
             },
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: FGLoveMarronFront,
                 imgurlback: FGLoveMarronBack,
             },
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: FGLoveNegroFront,
                 imgurlback: FGLoveNegroBack,
             }
@@ -252,12 +252,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'white',
+                code: '#fff',
                 imgurlfront: NPChampWhiteFront,
                 imgurlback: NPChampWhiteBack,
             },
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: NPChampBlackFront,
                 imgurlback: NPChampBlackBack,
             }
@@ -273,12 +273,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'white',
+                code: '#fff',
                 imgurlfront: NPChampWhiteFront,
                 imgurlback: NPChampWhiteBack,
             },
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: NPChampBlackFront,
                 imgurlback: NPChampBlackBack,
             }
@@ -294,12 +294,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: NPBlackFront,
                 imgurlback: NPBlackBack,
             },
             {
-                name: 'white',
+                code: '#fff',
                 imgurlfront: NPWhiteFront,
                 imgurlback: NPWhiteBack,
             },  
@@ -315,12 +315,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: NPBrownFront,
                 imgurlback: NPBrownBack,
             },
             {
-                name: 'blue',
+                code: '#bfced9',
                 imgurlfront: NPBlueFront,
                 imgurlback: NPBlueBack,
             }
@@ -337,7 +337,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: OBlackTeeFront,
                 imgurlback: OBlackTeeBack,
             }
@@ -353,7 +353,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'white',
+                code: '#fff',
                 imgurlfront: OWhiteTeeFront,
                 imgurlback: OWhiteTeeBack,
             }
@@ -371,12 +371,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'cream',
+                code: '#e2dfd1',
                 imgurlfront: FGLoveHoodieCremaFront,
                 imgurlback: FGLoveHoodieCremaBack,
             },
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: FGLoveHoodieMarronFront,
                 imgurlback: FGLoveHoodieMarronBack,
             }
@@ -392,12 +392,12 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'blue',
+                code: '#bfced9',
                 imgurlfront: FGASLBlueFront,
                 imgurlback: FGASLBlueBack,
             },
             {
-                name: 'orange',
+                code: 'orange',
                 imgurlfront: FGASLOrangeFront,
                 imgurlback: FGASLOrangeBack,
             }
@@ -413,7 +413,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: FGRSNegroFront,
                 imgurlback: FGRSNegroBack,
             },
@@ -429,7 +429,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: FGRSMarronFront,
                 imgurlback: FGRSMarronBack,
             },
@@ -445,7 +445,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'green',
+                code: '#234e44',
                 imgurlfront: FGRSGreenBack,
                 imgurlback: FGRSGreenFront
             },
@@ -461,17 +461,17 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: NPHoodDoubleBlackFront,
                 imgurlback: NPHoodDoubleBlackBack,
             },
             {
-                name: 'blue',
+                code: '#bfced9',
                 imgurlfront: NPHoodDoubleBlueFront,
                 imgurlback: NPHoodDoubleBlueBack,
             },
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: NPHoodDoublebrownFront,
                 imgurlback: NPHoodDoublebrownBack,
             }
@@ -487,27 +487,27 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'brown',
+                code: '#3e2c1e',
                 imgurlfront: NPHoodClassicBrownFront,
                 imgurlback: NPHoodClassicBrownBack,
             },
             {
-                name: 'white',
+                code: '#fff',
                 imgurlfront: NPHoodClassicWhiteFront,
                 imgurlback: NPHoodClassicWhiteBack,
             },
             {
-                name: 'grey',
+                code: '#bcbcc3',
                 imgurlfront: NPHoodgrisFront,
                 imgurlback: NPHoodGrisBack,
             },
             {
-                name: 'blue',
+                code: '#bfced9',
                 imgurlfront: NPHoodClassicBlueFront,
                 imgurlback: NPHoodClassicBlueBack,
             },
             {
-                name: 'black',
+                code: '#1f1a1e',
                 imgurlfront: NPHoodClassicBlackFront,
                 imgurlback: NPHoodClassicBlackBack,
             },
@@ -523,7 +523,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'green',
+                code: '#1f1a1e',
                 imgurlfront: OBlackHoodFront2,
                 imgurlback: OBlackHoodBack2,
             },
@@ -539,7 +539,7 @@ const Apparel = [
         price: '74.99$',
         colors: [
             {
-                name: 'green',
+                code: '#234e44',
                 imgurlfront: OBlackHoodFront,
                 imgurlback: OBlackHoodBack,
             },

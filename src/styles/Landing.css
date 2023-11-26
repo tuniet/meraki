@@ -162,65 +162,10 @@
         background-image: url('../media/images/lastcta5.jpg');
         background-position: 50%;
     }
-    .footer{
-        border-top:#452B1A solid;
-        background-color: #ECE4D9;
-        color: #452B1A;
-        height: 30vh;
-        align-items: center;
-        justify-content: space-between;
-        .left{
-            text-align: start;
-            .branding{
-                .title{
-                    font-family: SigismundoDiFanti;
-                    color: #452B1A;
-                }
-                .eslogan{
-                    font-weight: 600;
-                    font-size: 15px;
-                }
-            }
-            .socials{
-                gap: 20px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
-        .right{
-            text-align: end;
-            .form{
-                width: 100%;
-                text-align: center;
-                .form-title{
-                    font-size: 32px;
-                }
-                .form-input{
-                    width: 78%;
-                    text-decoration: none;
-                    outline: none;
-                }
-                .form-input:focus{
-                    outline: none;
-                }
-                .form-submit{
-                    width: 20%;
-                    color: #ECE4D9;
-                    background-color: #452B1A;
-                    border-radius: 1px;
-                    border: none;
-                }
-            }
-            .footer-info{
-                gap: 20px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
-        textarea:focus, input:focus{
-            outline: none;
-        }
-    }
     
-
+    .footer-link{
+        text-decoration: none;
+        font-weight: bold;
+        color:black
+    }
 }

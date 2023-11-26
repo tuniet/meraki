@@ -1,0 +1,61 @@
+.hero-vid{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    .herotxt{
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30%;
+        left: 50px;
+        font-weight: bold;
+        color: #ECE4D9;
+        line-height:180px;
+        .subtitle{
+            font-size: 40px;
+        }
+        .title{
+            font-size: 14rem;
+        }
+    }
+}
+.aboutinfo{
+    background-color: #ECE4D9;
+    color: #452B1A;
+    text-align: start;
+    .abouttitle{
+        font-size: 60px;
+    }
+    .abouttxt{
+        font-size: 28px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .imgcontainer{
+        width: 50%;
+        height: 100%;
+        .aboutimg{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    .pt{
+        display: flex;
+        height: 60vh;  
+    }
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.my{
+    margin-top: 40vh;
+    margin-bottom: 20vh;
+}

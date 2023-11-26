@@ -1,0 +1,10 @@
+.nopage{
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+}
+.nopage-button{
+    text-decoration: none;
+    background-color: #452B1A;
+    color: white;
+}
