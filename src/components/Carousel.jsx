@@ -16,7 +16,7 @@ const Carousel = props => {
                     if(apparel.bestseller && count < maxCount){
                         count++;
                         return(
-                        <Card key={apparel.name} colors = {apparel.colors} name = {apparel.name} price = {apparel.price} />
+                        <Card key={apparel.name} colors = {apparel.colors} name = {apparel.name} price = {apparel.price} setactive = {props.setactive} setapparelprice = {props.setapparelprice} setapparelname = {props.setapparelname} setapparelcolors = {props.setapparelcolors}/>
                         )
                     }
                     else{
