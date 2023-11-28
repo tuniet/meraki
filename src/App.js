@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing setactive = {setactive} modalactive = {modalactive}/>} />
         <Route path="Aboutus" element={<Aboutus />} />
-        <Route path="Allproducts/:filter" element={<Allproducts setactive = {setactive} modalactive = {modalactive}/>} />
+        <Route path="Allproducts/:filter/:type" element={<Allproducts setactive = {setactive} modalactive = {modalactive}/>} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </div>

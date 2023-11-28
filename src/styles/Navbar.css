@@ -104,6 +104,13 @@
     background-color: #fff;
     opacity: 0;
 }
+.offcanvas.show{
+    .offcanvas-header, 
+    .offcanvas-body{
+        z-index: 100;
+        pointer-events: all;
+    }
 
+}
 
 

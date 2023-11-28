@@ -20,6 +20,7 @@ function Navbar() {
     } else {
       // user has scrolled down
       setvisibleNav('');
+      setshowmenu('')
     }
     if (window.scrollY===0){
       setonTop('top')
@@ -37,23 +38,34 @@ function Navbar() {
     <div className='navexp' >
       <div className={`d-flex align-items-center nav px-4 ${visibleNav} ${onTop}`}>
               <div className='d-flex justify-content-start nav-side'>
-              <Link className='item' to='/Allproducts/all' onMouseEnter={() => setshowmenu('menu-active')}>SHOP</Link>
-              <Link className='item' to='/Allproducts/newcollection'>NEW ARRIVALS</Link>
-              <Link className='item' to='/Allproducts/sale'>ON SALE</Link>
+              <Link className='item' to='/Allproducts/all/all' onMouseEnter={() => setshowmenu('menu-active')}>SHOP</Link>
+              <Link className='item' to='/Allproducts/newcollection/all'>NEW ARRIVALS</Link>
+              <Link className='item' to='/Allproducts/sale/all'>ON SALE</Link>
           </div>
           <Link to='/' className='title'><h1 className='d-flex justify-content-center m-0'>MERAKI</h1></Link>
           <div className='d-flex justify-content-end nav-side'>
-              <span className='item'>ENG</span>
               <Link className='item' to='/Aboutus'>ABOUT US</Link>
-              <span className='item'>CART</span>
+              <a class="item" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">CART</a>
           </div>
       </div>
-      <div className={`extension d-flex px-4 ${showmenu}`} onMouseLeave={() =>setshowmenu('')}>
-          <Link className='menu-card tees' to='/Allproducts/tees'><div className='menu-fg'></div><span className='card-title'>TEES</span></Link>
-          <Link className='menu-card hoods' to='/Allproducts/hoodies'><div className='menu-fg'></div><span className='card-title'>HOODIES</span></Link>
-          <Link className='menu-card pants' to='/Allproducts/pants'><div className='menu-fg'></div><span className='card-title'>PANTS</span></Link>
+      <div className={`extension d-flex px-4 ${showmenu} ${visibleNav}`} onMouseLeave={() =>setshowmenu('')}>
+          <Link className='menu-card tees' to='/Allproducts/all/tees'><div className='menu-fg'></div><span className='card-title'>TEES</span></Link>
+          <Link className='menu-card hoods' to='/Allproducts/all/hoodies'><div className='menu-fg'></div><span className='card-title'>HOODIES</span></Link>
+          <Link className='menu-card pants' to='/Allproducts/all/pants'><div className='menu-fg'></div><span className='card-title'>PANTS</span></Link>
           <Link className='menu-card accessories' to='/Allproducts/all'><div className='menu-fg'></div><span className='card-title'>ACCESSORIES</span></Link>
       </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-5" id="offcanvasExampleLabel">Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body align-items-center d-flex justify-content-center">
+                <div>
+                  <b className='fs-4'>YOUR CART IS EMPTY</b><br/>
+                  {'(the cart is not implemented in this fictional store)'}
+                </div>
+            </div>
+        </div>
     </div>
   );
 }

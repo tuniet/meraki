@@ -27,7 +27,7 @@ const Landing = props => {
     <div className={`page-fg ${props.modalactive}`} onClick={() => props.setactive('')}></div>
     <div id='landing'>
       <Navbar />
-      <Link to='Allproducts/all'>
+      <Link to='Allproducts/all/all'>
         <div className='heroimage'>
           <img src={heroimg} alt=''/>
           <div className='herotext d-flex align-items-center justify-content-center'>
@@ -37,9 +37,9 @@ const Landing = props => {
       </Link>
       <Carousel title = 'Best sellers' max = {4} filter = 'bestseller' setapparelprice = {setapparelprice} setapparelname = {setapparelname} setapparelcolors = {setapparelcolors} setactive = {props.setactive}/>
       <div className='collections d-flex px-4 my-5'>
-        <Link className='collection-card tees' to='Allproducts/tees'><span className='collection-title'>Tees</span><span className='collection-button py-2 px-4'>VIEW</span></Link>
-        <Link className='collection-card hoods' to='Allproducts/hoodies'><span className='collection-title'>Hoodies</span><span className='collection-button py-2 px-4'>VIEW</span></Link>
-        <Link className='collection-card pants' to='Allproducts/pants'><span className='collection-title'>Pants</span><span className='collection-button py-2 px-4'>VIEW</span></Link>
+        <Link className='collection-card tees' to='Allproducts/all/tees'><span className='collection-title'>Tees</span><span className='collection-button py-2 px-4'>VIEW</span></Link>
+        <Link className='collection-card hoods' to='Allproducts/all/hoodies'><span className='collection-title'>Hoodies</span><span className='collection-button py-2 px-4'>VIEW</span></Link>
+        <Link className='collection-card pants' to='Allproducts/all/pants'><span className='collection-title'>Pants</span><span className='collection-button py-2 px-4'>VIEW</span></Link>
       </div>
       <Carousel title = 'New collection' max = {4} filter = 'newcollection'  setapparelprice = {setapparelprice} setapparelname = {setapparelname} setapparelcolors = {setapparelcolors} setactive = {props.setactive}/>
       <Link to='/aboutus'><div className='hrimg-aboutus my-4'>
@@ -47,13 +47,13 @@ const Landing = props => {
         <p className='abouttext'>We're the heartbeat of bold style, where rebellion meets fashion. Born for the wild hearts and free minds, our clothes scream individuality. Join the craze, break the norms.</p>
         <span className='aboutcall py-2 px-4'>LEARN MORE</span>
       </div></Link>
-      <Carousel title = 'On sale' max = {4} filter = 'sale'  setapparelprice = {setapparelprice} setapparelname = {setapparelname} setapparelcolors = {setapparelcolors} setactive = {props.setactive}/>
+      <Carousel title = 'On sale' max = {4} filter = 'onsale'  setapparelprice = {setapparelprice} setapparelname = {setapparelname} setapparelcolors = {setapparelcolors} setactive = {props.setactive}/>
       <div className='lastcta d-flex px-4 my-5 pb-5'>
-        <Link className='lastcta-card one' to='Allproducts/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
-        <Link className='lastcta-card two' to='Allproducts/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
-        <Link className='lastcta-card three' to='Allproducts/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
-        <Link className='lastcta-card four' to='Allproducts/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
-        <Link className='lastcta-card five' to='Allproducts/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
+        <Link className='lastcta-card one' to='Allproducts/all/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
+        <Link className='lastcta-card two' to='Allproducts/all/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
+        <Link className='lastcta-card three' to='Allproducts/all/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
+        <Link className='lastcta-card four' to='Allproducts/all/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
+        <Link className='lastcta-card five' to='Allproducts/all/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
       </div>
       <Footer />
       <div className='d-flex justify-content-center'>THIS IS A FICTIONAL SHOP MADE BY TONI FDEZ FOR &nbsp;<a  className='footer-link' href='https://www.tonifdez.com'>MY PORTFOLIO</a></div>

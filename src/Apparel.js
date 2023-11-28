@@ -107,9 +107,7 @@ const Apparel = [
                 imgurlback: FGGrnPantsBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
+        filter: 'none',
         type: 'pants'
 
     },
@@ -124,9 +122,7 @@ const Apparel = [
                 imgurlback: OGrnPantsBack,
             },
         ],
-        bestseller: false,
-        newcollection: true,
-        sale: false,
+        filter: 'newcollection',
         type: 'pants'
     },
     //NP
@@ -155,9 +151,7 @@ const Apparel = [
                 imgurlback: NPCargoCremaBack,
             }
         ],
-        bestseller: true,
-        newcollection: false,
-        sale: true,
+        filter: 'bestseller',
         type: 'pants'
 
     },
@@ -186,9 +180,7 @@ const Apparel = [
                 imgurlback: NPVaqCremaBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
+        filter: 'onsale',
         type: 'pants'
 
     },
@@ -207,9 +199,7 @@ const Apparel = [
                 imgurlback: NPPolarGreenBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
+        filter: 'none',
         type: 'pants'
 
     },
@@ -240,10 +230,8 @@ const Apparel = [
                 imgurlback: FGLoveNegroBack,
             }
         ],
-        bestseller: true,
-        newcollection: false,
-        sale: false,
-        type: 'tee'
+        filter: 'bestseller',
+        type: 'tees'
 
     },
     //NP
@@ -262,31 +250,8 @@ const Apparel = [
                 imgurlback: NPChampBlackBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'tee'
-
-    },
-    {
-        name: 'NP Champagne',
-        price: '74.99$',
-        colors: [
-            {
-                code: '#fff',
-                imgurlfront: NPChampWhiteFront,
-                imgurlback: NPChampWhiteBack,
-            },
-            {
-                code: '#1f1a1e',
-                imgurlfront: NPChampBlackFront,
-                imgurlback: NPChampBlackBack,
-            }
-        ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'tee'
+        filter: 'none',
+        type: 'tees'
 
     },
     {
@@ -304,10 +269,8 @@ const Apparel = [
                 imgurlback: NPWhiteBack,
             },  
         ],
-        bestseller: true,
-        newcollection: false,
-        sale: false,
-        type: 'tee'
+        filter: 'bestseller',
+        type: 'tees'
 
     },
     {
@@ -325,10 +288,8 @@ const Apparel = [
                 imgurlback: NPBlueBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: true,
-        type: 'tee'
+        filter: 'sale',
+        type: 'tees'
 
     },
     //O
@@ -342,10 +303,8 @@ const Apparel = [
                 imgurlback: OBlackTeeBack,
             }
         ],
-        bestseller: false,
-        newcollection: true,
-        sale: false,
-        type: 'tee'
+        filter: 'newcollection',
+        type: 'tees'
 
     },
     {
@@ -358,10 +317,8 @@ const Apparel = [
                 imgurlback: OWhiteTeeBack,
             }
         ],
-        bestseller: false,
-        newcollection: true,
-        sale: false,
-        type: 'tee'
+        filter: 'newcollection',
+        type: 'tees'
 
     },
     //Hoodies
@@ -381,10 +338,8 @@ const Apparel = [
                 imgurlback: FGLoveHoodieMarronBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'hoodie'
+        filter: 'none',
+        type: 'hoodies'
 
     },
     {
@@ -402,10 +357,8 @@ const Apparel = [
                 imgurlback: FGASLOrangeBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'hoodie'
+        filter: 'none',
+        type: 'hoodies'
 
     },
     {
@@ -418,10 +371,8 @@ const Apparel = [
                 imgurlback: FGRSNegroBack,
             },
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'hoodie'
+        filter: 'none',
+        type: 'hoodies'
 
     },
     {
@@ -434,10 +385,8 @@ const Apparel = [
                 imgurlback: FGRSMarronBack,
             },
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'hoodie'
+        filter: 'onsale',
+        type: 'hoodies'
 
     },
     {
@@ -450,10 +399,8 @@ const Apparel = [
                 imgurlback: FGRSGreenFront
             },
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: true,
-        type: 'hoodie'
+        filter: 'onsale',
+        type: 'hoodies'
 
     },
     {
@@ -462,8 +409,8 @@ const Apparel = [
         colors: [
             {
                 code: '#1f1a1e',
-                imgurlfront: NPHoodDoubleBlackFront,
-                imgurlback: NPHoodDoubleBlackBack,
+                imgurlfront: NPHoodDoubleBlackBack,
+                imgurlback: NPHoodDoubleBlackFront,
             },
             {
                 code: '#bfced9',
@@ -476,10 +423,8 @@ const Apparel = [
                 imgurlback: NPHoodDoublebrownBack,
             }
         ],
-        bestseller: false,
-        newcollection: false,
-        sale: false,
-        type: 'hoodie'
+        filter: 'onsale',
+        type: 'hoodies'
 
     },
     {
@@ -512,10 +457,8 @@ const Apparel = [
                 imgurlback: NPHoodClassicBlackBack,
             },
         ],
-        bestseller: true,
-        newcollection: false,
-        sale: true,
-        type: 'hoodie'
+        filter: 'bestseller',
+        type: 'hoodies'
 
     },
     {
@@ -528,10 +471,8 @@ const Apparel = [
                 imgurlback: OBlackHoodBack2,
             },
         ],
-        bestseller: false,
-        newcollection: true,
-        sale: false,
-        type: 'hoodie'
+        filter: 'newcollection',
+        type: 'hoodies'
 
     },
     {
@@ -544,10 +485,8 @@ const Apparel = [
                 imgurlback: OBlackHoodBack,
             },
         ],
-        bestseller: false,
-        newcollection: true,
-        sale: false,
-        type: 'hoodie'
+        filter: 'newcollection',
+        type: 'hoodies'
 
     },
 
