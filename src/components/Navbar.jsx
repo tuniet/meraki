@@ -38,9 +38,9 @@ function Navbar() {
     <div className='navexp' >
       <div className={`d-flex align-items-center nav px-4 ${visibleNav} ${onTop}`}>
               <div className='d-flex justify-content-start nav-side'>
-              <Link className='item' to='/Allproducts/all/all' onMouseEnter={() => setshowmenu('menu-active')}>SHOP</Link>
-              <Link className='item' to='/Allproducts/newcollection/all'>NEW ARRIVALS</Link>
-              <Link className='item' to='/Allproducts/sale/all'>ON SALE</Link>
+              <Link className='item' to='/allproducts/all/all' onMouseEnter={() => setshowmenu('menu-active')}>SHOP</Link>
+              <Link className='item' to='/allproducts/newcollection/all'>NEW ARRIVALS</Link>
+              <Link className='item' to='/allproducts/sale/all'>ON SALE</Link>
           </div>
           <Link to='/' className='title'><h1 className='d-flex justify-content-center m-0'>MERAKI</h1></Link>
           <div className='d-flex justify-content-end nav-side'>
@@ -49,10 +49,10 @@ function Navbar() {
           </div>
       </div>
       <div className={`extension d-flex px-4 ${showmenu} ${visibleNav}`} onMouseLeave={() =>setshowmenu('')}>
-          <Link className='menu-card tees' to='/Allproducts/all/tees'><div className='menu-fg'></div><span className='card-title'>TEES</span></Link>
-          <Link className='menu-card hoods' to='/Allproducts/all/hoodies'><div className='menu-fg'></div><span className='card-title'>HOODIES</span></Link>
-          <Link className='menu-card pants' to='/Allproducts/all/pants'><div className='menu-fg'></div><span className='card-title'>PANTS</span></Link>
-          <Link className='menu-card accessories' to='/Allproducts/all'><div className='menu-fg'></div><span className='card-title'>ACCESSORIES</span></Link>
+          <Link className='menu-card tees' to='/allproducts/all/tees'><div className='menu-fg'></div><span className='card-title'>TEES</span></Link>
+          <Link className='menu-card hoods' to='/allproducts/all/hoodies'><div className='menu-fg'></div><span className='card-title'>HOODIES</span></Link>
+          <Link className='menu-card pants' to='/allproducts/all/pants'><div className='menu-fg'></div><span className='card-title'>PANTS</span></Link>
+          <Link className='menu-card accessories' to='/allproducts/all'><div className='menu-fg'></div><span className='card-title'>ACCESSORIES</span></Link>
       </div>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">

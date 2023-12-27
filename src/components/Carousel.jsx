@@ -22,7 +22,7 @@ const Carousel = props => {
                     }
                 })}
         </div>
-        <Link className='carousel-button d-flex align-items-center justify-content-center' to={`Allproducts/${props.filter}`}>View More</Link>
+        <Link className='carousel-button d-flex align-items-center justify-content-center' to={`allproducts/${props.filter}/all`}>View More</Link>
       </div>
     );
   }
