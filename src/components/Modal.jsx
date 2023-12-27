@@ -1,4 +1,4 @@
-import '../styles/Card.css';
+import '../styles/Modal.css';
 import { useState } from 'react';
 import closeIcon from '../media/icons/x-lg.svg';
 
@@ -28,13 +28,14 @@ const Modal = props => {
           })}
           </div>
           <div className='modal-sizes'>
-            <span className={`size-select xs ${selectedsize}`} onClick={() => setselectedsize('one')}>XS</span>
+            <span className={`size-select xs ${selectedsize} underline-animation`} onClick={() => setselectedsize('one')}>XS</span>
             <span className={`size-select s ${selectedsize}`} onClick={() => setselectedsize('two')}>S</span>
             <span className={`size-select m ${selectedsize}`} onClick={() => setselectedsize('three')}>M</span>
             <span className={`size-select l ${selectedsize}`} onClick={() => setselectedsize('four')}>L</span>
             <span className={`size-select xl ${selectedsize}`} onClick={() => setselectedsize('five')}>XL</span>
             <span className={`size-select xxl ${selectedsize}`} onClick={() => setselectedsize('six')}>XXL</span>
           </div>
+          <span className='selector'></span>
           <span className='cart-button px-5 py-3 mt-4' onClick={() => props.setactive('')}>ADD TO CARD</span>
         </div>
       </div>

@@ -1,4 +1,4 @@
-
+import '../styles/Card.css'
 
 const Card = props => {
   
