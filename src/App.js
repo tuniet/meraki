@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Landing setactive = {setactive} modalactive = {modalactive}/>} />
-        <Route path="Aboutus" element={<Aboutus />} />
-        <Route path="Allproducts/:filter/:type" element={<Allproducts setactive = {setactive} modalactive = {modalactive}/>} />
+        <Route path="/meraki" element={<Landing setactive = {setactive} modalactive = {modalactive}/>} />
+        <Route path="/meraki/aboutus" element={<Aboutus />} />
+        <Route path="/meraki/allproducts/:filter/:type" element={<Allproducts setactive = {setactive} modalactive = {modalactive}/>} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </div>
