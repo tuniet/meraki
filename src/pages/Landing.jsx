@@ -56,7 +56,7 @@ const Landing = props => {
         <Link className='lastcta-card five' to='/Allproducts/all/all'><div className='lastcta-fg'></div><span className='lastcta-button py-2 px-4'>SHOP</span></Link>
       </div>
       <Footer />
-      <div className='d-flex justify-content-center'>THIS IS A FICTIONAL SHOP MADE BY TONI FDEZ FOR &nbsp;<a target="_blank" rel='noreferrer' className='footer-link' href='https://tuniet-portfolio.netlify.com'>MY PORTFOLIO</a></div>
+      <div className='infoo d-flex justify-content-center'>THIS IS A FICTIONAL SHOP MADE BY TONI FDEZ FOR &nbsp;<a target="_blank" rel='noreferrer' className='footer-link' href='https://tuniet-portfolio.netlify.com'>MY PORTFOLIO</a></div>
     </div>
     </div>
   );
