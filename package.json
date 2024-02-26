@@ -1,7 +1,7 @@
 {
   "name": "meraki",
   "version": "0.1.0",
-  "homepage": "https://tuniet.github.io/meraki",
+  "homepage": "https://merakishop.netlify.app",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
