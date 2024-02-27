@@ -28,7 +28,7 @@ const Modal = props => {
           })}
           </div>
           <div className='modal-sizes'>
-            <span className={`size-select xs ${selectedsize} underline-animation`} onClick={() => setselectedsize('one')}>XS</span>
+            <span className={`size-select xs ${selectedsize}`} onClick={() => setselectedsize('one')}>XS</span>
             <span className={`size-select s ${selectedsize}`} onClick={() => setselectedsize('two')}>S</span>
             <span className={`size-select m ${selectedsize}`} onClick={() => setselectedsize('three')}>M</span>
             <span className={`size-select l ${selectedsize}`} onClick={() => setselectedsize('four')}>L</span>

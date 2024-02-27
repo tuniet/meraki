@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import '../styles/Navbar.css';
-import  {Link}  from "react-router-dom";
+import  {Link, useLocation}  from "react-router-dom";
 
 function Navbar() {
 
   const [visibleNav, setvisibleNav] = useState('show');
   const [onTop, setonTop] = useState('top')
   const [showmenu, setshowmenu] = useState('')
-  
+  const [onHome, setonHome] = useState(useLocation().pathname === "/")
   let prevScrollPos = window.scrollY;
 
   window.addEventListener('scroll', function() {
@@ -28,12 +28,15 @@ function Navbar() {
     else{
       setonTop('')
     }
-
     // update previous scroll position
     prevScrollPos = currentScrollPos;
   });
 
-
+  useEffect(() => {
+    if(!onHome){
+      setonTop('')
+    }
+  }, [onTop, onHome]);
   return (
     <div className='navexp' >
       <div className={`d-flex align-items-center nav px-4 ${visibleNav} ${onTop}`}>

@@ -91,10 +91,7 @@
     width: 50px;
 }
 .xs.one{
-    .underline-animation:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+    border-bottom: 2px #452B1A solid;
 }
 .s.two{
     border-bottom: 2px #452B1A solid;
@@ -123,21 +120,5 @@
     background-color: #ECE4D9;
     color:#452B1A
 }
-.underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #452B1A;
-}
+
   
-.underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -6%;
-    left: 0;
-    background-color: #452B1A;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}

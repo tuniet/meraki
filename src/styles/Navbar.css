@@ -11,6 +11,8 @@
     justify-content: space-between;
     background-color: #fff;
     color: #452B1A;
+    position: fixed;
+    width: 100%;
     border-bottom: 1px #452B1A solid;
     transition: all .15s ease-in-out;
     transform: translateY(-70px);
