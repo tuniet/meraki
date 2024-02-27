@@ -54,10 +54,10 @@ useEffect(() => {
           </div>
           <div className="collection container-fluid">
             <div className='row'>
-            {Apparel.map(apparel => {      
+            {Apparel.map((apparel, i) => {      
               if((apparel.filter === filter || filter === 'none') && (apparel.type === type || type === 'all')){
               return(
-                <div className="col-md-6 col-lg-4 col-xl-3">
+                <div className="col-md-6 col-lg-4 col-xl-3" key={i}>
                   <Card key={apparel.name} colors = {apparel.colors} name = {apparel.name} price = {apparel.price} setactive = {props.setactive} setapparelprice = {setapparelprice} setapparelname = {setapparelname} setapparelcolors = {setapparelcolors}/>
                 </div>
               )}

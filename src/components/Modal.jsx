@@ -9,6 +9,8 @@ const Modal = props => {
   const [selectedcolor, setselectedcolor] = useState(0)
 
   return (
+    <>
+      <div className={`background ${props.active}`} onClick={() => props.setactive('')}/>
       <div className={`card-modal ${props.active}`}>
         <span className='modal-close-button' onClick={() => props.setactive('')}><img src={closeIcon} alt=''/></span>
         <span className='cars-button left' onClick={() => setmodalimg('')}>{'<'}</span>
@@ -39,6 +41,7 @@ const Modal = props => {
           <span className='cart-button px-5 py-3 mt-4' onClick={() => props.setactive('')}>ADD TO CARD</span>
         </div>
       </div>
+      </>
   );
 }
 
